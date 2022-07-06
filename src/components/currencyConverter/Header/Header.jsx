@@ -1,6 +1,8 @@
 import styled from './Header.module.css';
 import { hrn, usa, eur } from 'image/image';
 
+import PropTypes from 'prop-types';
+
 export default function Header({ rates }) {
   return (
     <header className={styled.header}>
@@ -40,3 +42,12 @@ export default function Header({ rates }) {
     </header>
   );
 }
+
+Header.propTypes = {
+  rates: PropTypes.arrayOf(
+    PropTypes.shape({
+      EUR: PropTypes.number.isRequired,
+      USD: PropTypes.number.isRequired,
+    })
+  ),
+};

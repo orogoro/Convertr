@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types';
 import styled from './ConversionForm.module.css';
+
 export default function ConversionForm({
   onChangeOneValue,
   onChangeTwoValue,
@@ -67,3 +69,13 @@ export default function ConversionForm({
     </>
   );
 }
+
+ConversionForm.propTypes = {
+  onChangeOneValue: PropTypes.func.isRequired,
+  onChangeTwoValue: PropTypes.func.isRequired,
+  result: PropTypes.number.isRequired,
+  resultTwo: PropTypes.number.isRequired,
+  inputOne: PropTypes.string.isRequired,
+  inputTwo: PropTypes.string.isRequired,
+  rate: PropTypes.number.isRequired,
+};

@@ -20,7 +20,7 @@ export const App = () => {
   }, []);
 
   useEffect(() => {
-    if (inputOne) {
+    if (inputOne > 0) {
       setLoading(true);
       getСonvert(selectTwo, selectOne, inputOne).then(res => {
         setLoading(false);
@@ -31,7 +31,7 @@ export const App = () => {
   }, [inputOne, selectOne, selectTwo]);
 
   useEffect(() => {
-    if (inputTwo) {
+    if (inputTwo > 0) {
       setLoading(true);
       getСonvert(selectOne, selectTwo, inputTwo).then(res => {
         setLoading(false);
