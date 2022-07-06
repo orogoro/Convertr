@@ -38,9 +38,11 @@ export default function ConversionForm({
           <option>EUR</option>
         </select>
 
-        <div className={styled.bank_rate}>
-          <p>1 = {rate}</p>
-        </div>
+        {!(rate === 0) && (
+          <div className={styled.bank_rate}>
+            <p>1 = {rate.toFixed(4)}</p>
+          </div>
+        )}
 
         <label className={styled.lable}>
           <input
