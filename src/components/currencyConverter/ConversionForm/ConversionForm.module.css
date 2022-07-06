@@ -1,0 +1,52 @@
+.ourRate {
+  color: #fff;
+  margin-left: 200px;
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  margin-left: 20px;
+  width: 700px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #b5b5b5;
+  justify-content: space-between;
+}
+
+.input {
+  padding: 5px;
+  width: 150px;
+  font-size: 17px;
+  border-radius: 3px;
+  border: none;
+}
+/* 
+.lable {
+    margin-left: 30px;
+}
+ */
+
+.select {
+  margin-left: -30px;
+  background-color: #e4e4e4;
+
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 3px;
+  border: none;
+}
+
+.bank_rate {
+  display: flex;
+  width: 100px;
+  padding: 3px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #fff;
+  justify-content: center;
+  align-items: center;
+  background-color: #858585;
+  color: #fff;
+}
